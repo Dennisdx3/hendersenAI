@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Transfer Pricing AI",
+    "date": "Coming soon...",
+    "image_link": "64013.png",
+    "description": "Comming-soon: Transfer Pricing Chatbot will be build on top our knowledge and experiences in the area of transfer pricing......",
+    "page_link": "#"
+  },
+  {
+    "id": "2",
+    "title": "Playground",
+    "date": "2023-12-01",
+    "image_link": "00361.png",
+    "description": "Playground is our general AI feed on various professional knowledge and real work experience.  It is being continuously updated on new knowledge and best practices.",
+    "page_link": "/M&AChatbot"
+  },
+  {
+    "id": "3",
+    "title": "M&A Chatbot",
+    "date": "2023-12-14",
+    "image_link": "213535.png",
+    "description": "M&A Chatbot is our AI developed on the Taxand global M&A Gudie.  It is proficient in M&A related tax and other regulations in around 50 countries throught the world.",
+    "page_link": "/M&AChatbot"
+  }
+]

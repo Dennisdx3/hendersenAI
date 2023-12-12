@@ -3,7 +3,6 @@ import Image from "next/image";
 import { auth } from "@clerk/nextjs";
 import { UserButton } from "@clerk/nextjs";
 import logo from "../../public/logoH.svg";
-import { clerkClient } from "@clerk/nextjs";
 
 const Header = async () => {
   const { userId } = auth();
@@ -67,13 +66,13 @@ const Header = async () => {
             <>
               <Link
                 href="sign-in"
-                className="text-gray-300 hover:text-white mr-4"
+                className="text-gray-300 hover:text-white mr-4 "
               >
                 Sign In
               </Link>
               <Link
                 href="sign-up"
-                className="text-gray-300 hover:text-white mr-4"
+                className="text-gray-300 hover:text-white mr-4 hidden sm:block"
               >
                 Sign Up
               </Link>

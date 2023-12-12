@@ -27,3 +27,16 @@
 section {
   @apply mb-5 w-fit border p-2 mr-5 rounded-xl bg-slate-200 shadow-lg;
 }
+
+textarea {
+  display: flex;
+  align-items: center;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+p {
+  @apply my-5 text-sm;
+}
