@@ -145,7 +145,7 @@ const Playground = () => {
   };
   return (
     <div
-      className="fixed top-20 bottom-24 right-0 text-sm overflow-auto flex flex-col justify-start"
+      className="fixed top-20 bottom-24 left-0 right-0 text-sm overflow-auto flex flex-col justify-start"
       id="chat"
     >
       <div>
