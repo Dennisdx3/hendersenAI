@@ -17,21 +17,21 @@ export default function Home() {
             <p>
               2023 is the year of the AI. The use of artificial intelligence
               (AI) is increasingly becoming prevalent in various industries.
-              Professional services such as accounting, finance, and legal are
-              no exception to this trend. With advancements in machine learning
-              algorithms and natural language processing capabilities, AI has
-              the potential to revolutionize these fields by automating
+              Professional services such as accounting, finance, legal and tax
+              are no exception to this trend. With advancements in machine
+              learning algorithms and natural language processing capabilities,
+              AI has the potential to revolutionize these fields by automating
               repetitive tasks and enabling professionals to focus on higher
               value-added work.
             </p>
             <p>
-              We are developing a serious of AI products by combining our
+              We are developing a series of AI products by combining our
               professional expertise and the cutting edge AI technology. You
               need to sign-up in order to try with your various bots.
               Registration is totally FREE. Enjoy!
             </p>
             <p>
-              <Link href="/help" className="hover:font-bold">
+              <Link href="#" className="hover:font-bold">
                 Any questions, please visit out FAQ page.
               </Link>
             </p>

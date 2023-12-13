@@ -77,7 +77,7 @@ const Playground = () => {
     document.getElementById("inputField").value = "";
     // setUsermessage("");
 
-    const response = await fetch(`${URL}`, {
+    const response = await fetch(`${URL}/`, {
       method: "POST",
       body: JSON.stringify(prompt),
       headers: {
