@@ -42,7 +42,7 @@ const Header = async () => {
               </svg>
             </div>
           </Link>
-          <Link href="/">
+          <Link href="/help">
             <div className="flex items-center uppercase text-slate-400 hover:text-white mr-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

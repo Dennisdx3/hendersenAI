@@ -10,7 +10,9 @@ const Playground = () => {
   const [historyLoaded, setHistoryLoaded] = useState(false);
   const [messages, setMessages] = useState([]);
   const [modal, setModal] = useState(false);
+  const [hint, setHint] = useState(true);
   const [modalClose, setModalClose] = useState(false);
+  const [hintClose, setHintClose] = useState(true);
   // const [rows, setRows] = useState(1);
   const ref = useRef(null);
   const URL = process.env.NEXT_PUBLIC_API_URL;
@@ -113,6 +115,21 @@ const Playground = () => {
     }
   };
 
+  const showHint = () => {
+    if (hint == false) {
+      setHint(true);
+      setHintClose(true);
+    }
+    if (hint == true && hintClose == true) {
+      setHint(false);
+      setHintClose(false);
+    }
+  };
+
+  const closeHint = () => {
+    setHint(false);
+  };
+
   const closeModal = () => {
     setModal(false);
   };
@@ -143,6 +160,66 @@ const Playground = () => {
       textarea.style.height = `300px`;
     }
   };
+
+  // hints
+
+  const hint1 = () => {
+    document.getElementById("inputField").value =
+      "Can you introduce the debt-equity ratio rules in China to me?";
+    setUsermessage(
+      "Can you introduce the debt-equity ratio rules in China to me?"
+    );
+    setHint(false);
+    textAreaSize();
+  };
+
+  const hint2 = () => {
+    document.getElementById("inputField").value =
+      "What are rules about asset deals and equity deals in China?";
+    setUsermessage(
+      "What are rules about asset deals and equity deals in China?"
+    );
+    setHint(false);
+    textAreaSize();
+  };
+
+  const hint3 = () => {
+    document.getElementById("inputField").value =
+      "Do you have any idea about the debt push down in M&A?";
+    setUsermessage("Do you have any idea about the debt push down in M&A?");
+    setHint(false);
+    textAreaSize();
+  };
+
+  const hint4 = () => {
+    document.getElementById("inputField").value =
+      "Are there any CFC rules in China? Can you brief it for me?";
+    setUsermessage(
+      "Are there any CFC rules in China? Can you brief it for me?"
+    );
+    setHint(false);
+    textAreaSize();
+  };
+  const hint5 = () => {
+    document.getElementById("inputField").value =
+      "What are different types of legal vehicles for my company to invest into China?";
+    setUsermessage(
+      "What are different types of legal vehicles for my company to invest into China?"
+    );
+    setHint(false);
+    textAreaSize();
+  };
+
+  const hint6 = () => {
+    document.getElementById("inputField").value =
+      "Are there any policy or implications related to indirect share transfer for my Chinese subsidiary that I should pay attention to?";
+    setUsermessage(
+      "Are there any policy or implications related to indirect share transfer for my Chinese subsidiary that I should pay attention to?"
+    );
+    setHint(false);
+    textAreaSize();
+  };
+
   return (
     <div
       className="fixed top-20 bottom-24 left-0 right-0 text-sm overflow-auto flex flex-col justify-start"
@@ -159,6 +236,72 @@ const Playground = () => {
         ))}
         <div ref={ref} />
       </div>
+      {hint && (
+        <container className="  ml-2 text-white items-center bg-slate-700 shadow-md justify-center flex rounded-xl p-2 text-sm fixed right5 sm:right-10 right-5 top-44 opacity-80 width-auto">
+          <div>
+            <button
+              className="px-5 my-2  text-gray-300 hover:text-white"
+              onClick={hint1}
+            >
+              Debt Equity Ratio?
+            </button>
+            <br />
+            <button
+              className="px-5 my-2 text-gray-300 hover:text-white"
+              onClick={hint2}
+            >
+              Share acquisition vs asset acquisition?
+            </button>
+            <br />
+            <button
+              className="px-5 my-2 text-gray-300 hover:text-white"
+              onClick={hint3}
+            >
+              Debt push down?
+            </button>
+            <br />
+            <button
+              className="px-5 my-2 text-gray-300 hover:text-white"
+              onClick={hint4}
+            >
+              CFC Rules?
+            </button>
+            <br />
+
+            <button
+              className="px-5 my-2 text-gray-300 hover:text-white"
+              onClick={hint5}
+            >
+              Legal Vehicles?
+            </button>
+            <br />
+
+            <button
+              className="px-5 my-2 text-gray-300 hover:text-white"
+              onClick={hint6}
+            >
+              Indirect transfer?
+            </button>
+            <br />
+
+            <div className="flex justify-evenly text-xs">
+              <button
+                className="bg=slate-700 hover:bg-slate-950 border border-solid rounded-lg p-2 mt-5 mb-2"
+                onClick={closeHint}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </container>
+      )}
+
+      <button
+        onClick={showHint}
+        className="hover:bg-slate-900 cursor-pointer ml-2 text-white items-center bg-slate-700 shadow-md justify-center flex rounded-xl p-2 text-xs opacity-30 fixed right-5 sm:right-10 top-24 w-14"
+      >
+        Show Hint
+      </button>
       {modal && (
         <container className="  ml-2 text-white items-center bg-slate-700 shadow-md justify-center flex rounded-xl p-2 text-sm fixed right5 sm:right-10 right-5 bottom-44 opacity-80 width-auto">
           <div>

@@ -31,7 +31,7 @@ export default function Home() {
               Registration is totally FREE. Enjoy!
             </p>
             <p>
-              <Link href="#" className="hover:font-bold">
+              <Link href="/help" className="hover:font-bold">
                 Any questions, please visit out FAQ page.
               </Link>
             </p>
@@ -40,7 +40,7 @@ export default function Home() {
             <Image
               src="/64014.png"
               alt="background"
-              className="rounded-lg shadow-lg ml-5 shadow-slate-500 object-cover"
+              className="rounded-lg shadow-lg ml-5 shadow-slate-500 object-cover hidden sm:block"
               width={2048}
               height={2048}
             />
