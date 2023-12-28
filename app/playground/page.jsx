@@ -237,7 +237,7 @@ const Playground = () => {
               className="px-5 my-2 text-gray-300 hover:text-white"
               onClick={hint2}
             >
-              Google's new AI Model?
+              New AI Model?
             </button>
             <br />
             <button
