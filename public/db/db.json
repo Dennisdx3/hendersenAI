@@ -8,19 +8,19 @@
     "page_link": "#"
   },
   {
-    "id": "2",
-    "title": "Playground",
-    "date": "Coming soon...",
-    "image_link": "00361.png",
-    "description": "Playground is our general AI feed on various professional knowledge and real work experience.  It is being continuously updated on new knowledge and best practices.",
-    "page_link": "#"
-  },
-  {
     "id": "3",
     "title": "M&A Chatbot - China Chapter",
     "date": "2023-12-14",
     "image_link": "213535.png",
     "description": "M&A Chatbot is our AI developed on the Taxand global M&A Gudie.  It aims to provide support in M&A related tax and other regulations in around 50 countries throughout the world.  Currently, the information is limited to China.",
     "page_link": "/M&AChatbot"
+  },
+  {
+    "id": "2",
+    "title": "Playground",
+    "date": "2023-12-28 Beta",
+    "image_link": "00361.png",
+    "description": "Playground is our general AI feed on various professional knowledge and real work experience.  It is being continuously updated on new knowledge and best practices.",
+    "page_link": "/playground"
   }
 ]
