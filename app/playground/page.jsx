@@ -172,7 +172,8 @@ const Playground = () => {
   };
 
   const hint2 = () => {
-    const hint = "What is google's newest AI model?";
+    const hint =
+      "What is the technology of embedding vectors and use it as AI knowledge base?";
     document.getElementById("inputField").value = hint;
     setUsermessage(hint);
     setHint(false);
@@ -237,7 +238,7 @@ const Playground = () => {
               className="px-5 my-2 text-gray-300 hover:text-white"
               onClick={hint2}
             >
-              New AI Model?
+              Technology behind?
             </button>
             <br />
             <button
@@ -263,12 +264,12 @@ const Playground = () => {
             </button>
             <br />
 
-            <button
+            {/* <button
               className="px-5 my-2 text-gray-300 hover:text-white"
               onClick={hint6}
             >
               Anything new?
-            </button>
+            </button> */}
             <br />
 
             <div className="flex justify-evenly text-xs">
